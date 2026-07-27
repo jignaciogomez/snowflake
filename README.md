@@ -52,3 +52,11 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 | Schemas | `BRONZE`, `SILVER`, `GOLD`, `CONTROL` |
 | Warehouse | `NACHO_DEV_WH` |
 | Resource monitor | `NACHO_DEV_RM` |
+
+## Current DEV access model
+
+| Role | Scope |
+|---|---|
+| `NACHO_PLATFORM_ADMIN` | Owns DEV infrastructure objects. |
+| `NACHO_DATA_ENGINEER` | Can create DEV engineering objects across medallion schemas. |
+| `NACHO_DATA_ANALYST` | Can access the DEV curated `GOLD` schema. |
