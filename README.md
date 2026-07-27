@@ -52,6 +52,7 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 | Schemas | `BRONZE`, `SILVER`, `GOLD`, `CONTROL` |
 | Warehouse | `NACHO_DEV_WH` |
 | Resource monitor | `NACHO_DEV_RM` |
+| Control table | `NACHO_DEV_DB.CONTROL.LOAD_AUDIT` |
 
 ## Current DEV access model
 
