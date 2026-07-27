@@ -43,3 +43,12 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 - Object names will use uppercase Snowflake identifiers unless a feature requires quoted identifiers.
 - Account-specific values belong in local configuration, never hard-coded in SQL.
 - GitHub is the source of truth; Snowflake Git repositories and Workspaces are downstream clients of it.
+
+## Current DEV foundation
+
+| Object type | Name |
+|---|---|
+| Database | `NACHO_DEV_DB` |
+| Schemas | `BRONZE`, `SILVER`, `GOLD`, `CONTROL` |
+| Warehouse | `NACHO_DEV_WH` |
+| Resource monitor | `NACHO_DEV_RM` |
