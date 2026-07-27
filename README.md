@@ -53,6 +53,8 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 | Warehouse | `NACHO_DEV_WH` |
 | Resource monitor | `NACHO_DEV_RM` |
 | Control table | `NACHO_DEV_DB.CONTROL.LOAD_AUDIT` |
+| First source file | `data/sample/orders_2026-07-01.csv` |
+| First file format | `NACHO_DEV_DB.BRONZE.ORDERS_CSV_FORMAT` |
 
 ## Current DEV access model
 
