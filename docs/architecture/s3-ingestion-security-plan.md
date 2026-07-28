@@ -59,6 +59,12 @@ This limits the blast radius if a stage is misconfigured.
 | Snowflake | Storage integration | `NACHO_S3_DEV_INT` |
 | Snowflake | External stage | `NACHO_DEV_DB.BRONZE.ORDERS_S3_STAGE` |
 
+The AWS IAM role ARN is:
+
+```text
+arn:aws:iam::245395155735:role/NachoSnowflakeS3OrdersDevRole
+```
+
 ## Security flow
 
 ```text
