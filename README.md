@@ -61,6 +61,7 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 | First validation script | `sql/02_ingestion/06_validate_bronze_orders_raw.sql` |
 | Planned S3 DEV orders prefix | `s3://amazn-bucket-snowflake/nacho/dev/orders/` |
 | Planned storage integration | `NACHO_S3_DEV_INT` |
+| Planned S3 external stage | `NACHO_DEV_DB.BRONZE.ORDERS_S3_STAGE` |
 
 ## Current DEV access model
 
