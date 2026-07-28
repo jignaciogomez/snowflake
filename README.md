@@ -54,6 +54,7 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 | Resource monitor | `NACHO_DEV_RM` |
 | Control table | `NACHO_DEV_DB.CONTROL.LOAD_AUDIT` |
 | First source file | `data/sample/orders_2026-07-01.csv` |
+| Second source file | `data/sample/orders_2026-07-02.csv` |
 | First file format | `NACHO_DEV_DB.BRONZE.ORDERS_CSV_FORMAT` |
 | First internal stage | `NACHO_DEV_DB.BRONZE.ORDERS_INTERNAL_STAGE` |
 | First Bronze table | `NACHO_DEV_DB.BRONZE.ORDERS_RAW` |

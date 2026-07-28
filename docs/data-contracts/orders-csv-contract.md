@@ -8,7 +8,7 @@ The first source dataset is a small order extract represented by:
 data/sample/orders_2026-07-01.csv
 ```
 
-This file simulates a daily batch export from an order-management source system.
+The second file, `data/sample/orders_2026-07-02.csv`, follows the same contract and is used to demonstrate incremental ingestion with audit logging.
 
 ## Format
 
