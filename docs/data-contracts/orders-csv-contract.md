@@ -10,6 +10,8 @@ data/sample/orders_2026-07-01.csv
 
 The second file, `data/sample/orders_2026-07-02.csv`, follows the same contract and is used to demonstrate incremental ingestion with audit logging.
 
+The third file, `data/sample/orders_2026-07-03.csv`, follows the same contract and is used to demonstrate S3 external-stage ingestion.
+
 ## Format
 
 | Property | Value |
