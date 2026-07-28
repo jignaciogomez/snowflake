@@ -59,6 +59,7 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 | First internal stage | `NACHO_DEV_DB.BRONZE.ORDERS_INTERNAL_STAGE` |
 | First Bronze table | `NACHO_DEV_DB.BRONZE.ORDERS_RAW` |
 | First validation script | `sql/02_ingestion/06_validate_bronze_orders_raw.sql` |
+| Planned S3 DEV orders prefix | `s3://amazn-bucket-snowflake/nacho/dev/orders/` |
 
 ## Current DEV access model
 
