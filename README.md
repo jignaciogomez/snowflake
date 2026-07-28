@@ -56,6 +56,7 @@ The detailed prerequisites for the next step are in [docs/SETUP_PREREQUISITES.md
 | First source file | `data/sample/orders_2026-07-01.csv` |
 | First file format | `NACHO_DEV_DB.BRONZE.ORDERS_CSV_FORMAT` |
 | First internal stage | `NACHO_DEV_DB.BRONZE.ORDERS_INTERNAL_STAGE` |
+| First Bronze table | `NACHO_DEV_DB.BRONZE.ORDERS_RAW` |
 
 ## Current DEV access model
 

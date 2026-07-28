@@ -1,0 +1,43 @@
+-- =============================================================================
+-- Step 4.3b: Load orders from internal stage
+-- Purpose: Load the staged orders CSV into the Bronze raw table.
+-- Execution role: NACHO_PLATFORM_ADMIN
+-- =============================================================================
+
+USE ROLE NACHO_PLATFORM_ADMIN;
+USE WAREHOUSE NACHO_DEV_WH;
+USE DATABASE NACHO_DEV_DB;
+USE SCHEMA BRONZE;
+
+COPY INTO ORDERS_RAW (
+    ORDER_ID,
+    CUSTOMER_ID,
+    ORDER_TS,
+    STATUS,
+    CURRENCY,
+    GROSS_AMOUNT,
+    DISCOUNT_AMOUNT,
+    TAX_AMOUNT,
+    SOURCE_UPDATED_AT,
+    METADATA_FILE_NAME,
+    METADATA_FILE_ROW_NUMBER,
+    LOAD_TS
+)
+FROM (
+    SELECT
+        $1::VARCHAR AS ORDER_ID,
+        $2::VARCHAR AS CUSTOMER_ID,
+        $3::VARCHAR AS ORDER_TS,
+        $4::VARCHAR AS STATUS,
+        $5::VARCHAR AS CURRENCY,
+        $6::VARCHAR AS GROSS_AMOUNT,
+        $7::VARCHAR AS DISCOUNT_AMOUNT,
+        $8::VARCHAR AS TAX_AMOUNT,
+        $9::VARCHAR AS SOURCE_UPDATED_AT,
+        METADATA$FILENAME::VARCHAR AS METADATA_FILE_NAME,
+        METADATA$FILE_ROW_NUMBER::NUMBER AS METADATA_FILE_ROW_NUMBER,
+        CURRENT_TIMESTAMP() AS LOAD_TS
+    FROM @ORDERS_INTERNAL_STAGE
+)
+FILE_FORMAT = (FORMAT_NAME = ORDERS_CSV_FORMAT)
+ON_ERROR = ABORT_STATEMENT;
